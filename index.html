@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-bar">Book-1 Excel</div>
+        <div class="menu-bar">
+            <div class="menu-file menu-item">File</div>
+            <div class="menu-home menu-item selected">Home</div>
+            <div class="menu-insert menu-item">Insert</div>
+            <div class="menu-layout menu-item">Layout</div>
+            <div class="menu-help menu-item">Help</div>
+        </div>
+        <div class="menu-icon-bar">
+            <i class="fa-solid fa-scissors menu-icon"></i>
+            <i class="fa-regular fa-copy menu-icon"></i>
+            <i class="fa-regular fa-paste menu-icon"></i>
+
+            <select class="font-family-select selector">
+                <option style="font-family: Noto Sans;" value="Noto Sans">Noto Sans</option>
+                <option style="font-family: Arial;" value="Arial">Arial</option>
+                <option style="font-family: Cambria;" value="Cambria">Cambria</option>
+                <option style="font-family: Comic  Sana MS;" value="Comic Sans Ms">Comic Sans Ms</option>
+                <option style="font-family: Impact;" value="Impact">Impact</option>
+                <option style="font-family: Georgia;" value="Georgia">Georgia</option>
+                <option style="font-family: 'Courier New';" value="Courier New">Courier New</option>
+            </select>
+            <select class="font-size-select selector">
+                <option value="12px">12</option>
+                <option value="14px" selected>14</option>
+                <option value="16px">16</option>
+                <option value="18px">18</option>
+                <option value="20px">20</option>
+                <option value="24px">24</option>
+                <option value="24px">26</option>
+                <option value="24px">28</option>
+            </select>
+            <i class="fa-solid fa-bold menu-icon style-icon"></i>
+            <i class="fa-solid fa-italic menu-icon style-icon"></i>
+            <i class="fa-solid fa-underline menu-icon style-icon"></i>
+            <i class="fa-solid fa-align-left menu-icon selected align-icon"></i>
+            <i class="fa-solid fa-align-center menu-icon align-icon"></i>
+            <i class="fa-solid fa-align-right menu-icon align-icon"></i>
+
+            <div class="menu-icon icon-color-fill">
+                <input class="color-picker background-color-picker" type="color" value="#ffffff"/>
+                <i class="fa-solid fa-fill-drip color-fill-icon"></i>
+            </div>
+
+            <div class="menu-icon icon-color-text">
+                <input class="color-picker text-color-picker" type="color"/>
+                <i class="fa-solid fa-font color-fill-text"></i>
+            </div>
+           
+        </div>
+        <div class="formula-bar">
+            <div class="formula-editor selected-cell"></div>
+        <div class="function-sign"><i class="fa-solid fa-florin-sign"></i>x</div>
+        <div class="formula-editor formula-input" contenteditable="true"></div>
+        </div>
+        <div class="data-container">
+            <div class="select-all"></div>
+            <div class="column-name-container">
+            
+            </div>
+            <div class="row-name-container">
+              
+            </div>
+            <div class="input-cell-container">
+             
+            </div>
+        </div>
+        <div class="sheet-bar">
+            <div class="scrollar">
+                <i class="fa-solid fa-caret-left icon-left"></i>
+                <i class="fa-solid fa-caret-right icon-right"></i>
+            </div>
+            <i class="fa-solid fa-square-plus add-icon"></i>
+            <div class="sheet-tab-container">
+                <div class="sheet-tab selected">Sheet1</div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="excel.js"></script>
+</body>
+</html>
